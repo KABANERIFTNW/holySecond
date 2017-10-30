@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/*clear*/
+*{padding:0;margin:0;}
+
+/**************************导航********************/
+body{background:url(../images/images/main-bg.png) repeat repeat;}
+nav{list-style: none;position: relative;padding: 0;margin: 0;width:100%;}
+
+nav div.opacity{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 145px;
+	top: 0px;
+	background-color:white ;
+	 filter:alpha(opacity=75);  
+      -moz-opacity:0.75;  
+      -khtml-opacity: 0.75;  
+      opacity: 0.75;  
+      z-index: -1;
+      -webkit-border-bottom-left-radius: 500px 300px;
+      -moz-border-bottom-left-radius: 500px 300px;
+      border-bottom-left-radius: 500px 300px;
+      -webkit-border-bottom-right-radius: 500px 300px;
+      -moz-border-bottom-right-radius: 500px 300px;
+      border-bottom-right-radius: 500px 300px;
+}
+#nav {
+	list-style: none;
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+/*	border:1px solid #0C0;*/
+	text-align:center;
+}
+
+ul li{
+	display:inline-block;
+	height: 140px;
+	/*border:1px solid;*/
+	margin:0 3%;
+	padding: 0;
+	}
+#nav a {
+	position:relative;
+	display:block;
+	/*border:1px solid red;*/
+}
+#nav span {
+	display: none;
+	position: absolute;
+	}	
+#nav a:hover span{
+	display: block;
+}
+#nav a.home {
+	width: 144px;
+	height: 50px;
+	background: url(../images/images/home.gif) no-repeat;
+	top: 33px;
+}
+#nav a.home span {
+	width: 86px;
+	height: 14px;
+	background: url(../images/images/home-over.gif) no-repeat;
+	left: 28px;
+	top: -15px;
+}
+#nav a.about {
+	width: 130px;
+	height: 56px;
+	background: url(../images/images/about.gif) no-repeat;
+	top: 52px;
+}
+#nav .about span {
+	width: 40px;
+	height: 12px;
+	background: url(../images/images/about-over.gif) no-repeat;
+	left: 44px;
+	top: 56px;
+}
+#nav a.rss {
+	width: 112px;
+	height: 54px;
+	background: url(../images/images/rss.gif) no-repeat;
+	top: 44px;
+}
+#nav a.rss span {
+	width: 92px;
+	height: 20px;
+	background: url(../images/images/rss-over.gif) no-repeat;
+	left: 26px;
+	top: -22px;
+}
+#nav a.my {
+	width: 144px;
+	height: 58px;
+	background: url(../images/images/my.png) no-repeat;
+	top: 33px;
+}
+
+
+#nav a:hover{
+	background-position: left bottom;
+	transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;	/* Firefox 4 */
+    -webkit-transition: all 0.3s ease-in-out;	/* Safari 和 Chrome */
+    -o-transition: all 0.3s ease-in-out;	/* Opera */
+}
+
+/**************************导航结束********************/
+
+/************************底部开始*************************/
+footer{
+	width:100%;
+	position:fixed; bottom:0;
+}
+div.clear{clear:both}
+div.new{margin:0 auto;height:100px;background-color:#0FF;}
+
+/************************底部结束*************************/
